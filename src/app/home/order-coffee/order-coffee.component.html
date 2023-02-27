@@ -1,0 +1,43 @@
+<ion-toolbar [ngStyle]="{ '--background': '#fff' }">
+  <ion-buttons slot="start">
+    <ion-button>Отмена</ion-button>
+  </ion-buttons>
+  <ion-title class='header-content__title'>SURF COFFEE</ion-title>
+  <ion-buttons slot="end">
+    <ion-button>
+      <ion-icon name="ellipsis-horizontal-circle"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+<ion-content>
+
+<ion-label class='subtitle'>бот</ion-label>
+<div class='main'>
+  <ion-label class='main-label'>Закажи кофе заранее</ion-label>
+  <ion-text class='main-text'>Выберете кофейню, где заберете свой заказ</ion-text>
+</div>
+
+  <ion-card>
+    <img alt="Silhouette of mountains" src="assets/place1.png" />
+    <ion-card-header>
+      <ion-card-title>POST <ion-icon name="close-outline"></ion-icon>SURF COFFEE</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>
+        <ion-text>ул. Постовая, 55</ion-text>
+        <ion-img src='assets/dot.png'></ion-img>
+        <ion-text>8:00 - 23:00</ion-text>
+      </div>
+      <ion-buttons>
+        <ion-button>
+          <ion-icon name="arrow-forward-outline" color=''></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-buttons class='back-button'>
+  <ion-button>Назад</ion-button>
+</ion-buttons>
