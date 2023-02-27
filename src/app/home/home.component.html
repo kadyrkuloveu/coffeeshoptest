@@ -1,14 +1,48 @@
+<ion-toolbar [ngStyle]="{ '--background': '#fff' }">
+  <ion-title class='header-content__title'>SURF COFFEE</ion-title>
+  <ion-buttons slot="end">
+    <ion-button>
+      <ion-icon name="ellipsis-horizontal-circle"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+<ion-label class='subtitle'>бот</ion-label>
 <ion-content>
-  <ion-card class="ion-text-center">
-    <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" />
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Программа лояльности</ion-card-title>
+      <ion-label>Копите бонусы и расплачивайтесь</ion-label>
+    </ion-card-header>
+
     <ion-card-content>
-      <ion-card-title>
-        <span translate>Hello world !</span>
-      </ion-card-title>
-      <p>
-        <app-loader [isLoading]="isLoading"></app-loader>
-        <q [hidden]="isLoading">{{ quote }}</q>
-      </p>
+      <div>
+        <ion-label>150</ion-label>
+        <ion-text>накопленных бонусов</ion-text>
+      </div>
+      <ion-buttons>
+        <ion-button>QR-КОД</ion-button>
+      </ion-buttons>
     </ion-card-content>
   </ion-card>
+
+  <div class='about'>
+    <!--  need to add logo -->
+    <ion-img class='logo1' src='assets/logo1.png' ></ion-img>
+    <ion-label class='about-label'>
+      Варим кофе - получаем удовольствие!
+    </ion-label>
+    <ion-text class='about-text'>
+      Спот в центре Краснодара с большой крытой летней верандой и особенной энергией. Здесь легко почувствовать себя как дома: теплый гранж интерьер, мягкий свет, много дерева и зелени. Сразу хочется надеть халат, любимые тапочки, налить свежезаваренный фильтр в керамическую чашку и болтать обо всем на свете с друзьями.
+      Или поработать за большим коворк-столом, их два.
+    </ion-text>
+<!--  need to add logo -->
+    <ion-img class='logo2' src='assets/logo2.png' ></ion-img>
+  </div>
+
+  <ion-buttons class='buttons'>
+    <ion-button class='button1'>Закажи кофе заранее</ion-button>
+    <ion-button class='button2'>Чат</ion-button>
+  </ion-buttons>
+
+
 </ion-content>
