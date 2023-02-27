@@ -13,10 +13,7 @@ export class HomeComponent implements OnInit {
   quote: string | undefined;
   isLoading = false;
 
-  constructor(
-    private quoteService: QuoteService,
-    private router: Router,
-  ) {}
+  constructor(private quoteService: QuoteService, private router: Router) {}
 
   ngOnInit() {
     this.isLoading = true;
@@ -32,8 +29,7 @@ export class HomeComponent implements OnInit {
       });
   }
 
-
-  navigate(){
-    this.router.navigate(['/detail'])
+  navigate() {
+    this.router.navigate(['/detail']);
   }
 }
